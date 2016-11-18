@@ -1,4 +1,4 @@
-<h1>Unit 3 Final Project: Catching Footballs</h1>
+<h1>Unit 3 Final Project: Football</h1>
 
 <strong>Interaction</strong>: 
 The player will interact with the game using Makey Makey. I am doing this so it makes the game harder and more fun to play. I want to keep the controls far from each other, so the player will have to move a bit to to make the character move in the game. The player is moving like the character, but it is a smaller version. 
