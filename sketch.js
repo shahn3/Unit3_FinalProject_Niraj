@@ -4,6 +4,8 @@ var qbThrowing
 var wrReady;
 var wrSuccess;
 var rand;
+var touchdown = false; 
+
 
 function preload()
 {
@@ -25,8 +27,11 @@ function setup()
 function draw() 
 {
   background(backgroundImage);
+  timer();
   QuarterBack();
+  touchdownFail();
   Ready();
+  keyPressed();
 }
 
 
@@ -45,51 +50,70 @@ function Ready()
 {
   print(rand);
   
-  if (rand == 0)
+  if (rand === 0)
   {
-    image(wrReady, 250, 250, 100, 100);
+    image(wrReady, 800, 50, 100, 100);
   }
   
   if (rand == 1)
   {
-  image(wrReady, 350, 350, 100, 100);
+  image(wrReady, 800, 250, 100, 100);
   }
   
   if (rand == 2)
   {
-    image(wrReady, 450, 450, 100, 100);
+    image(wrReady, 800, 450, 100, 100);
   }
 }
 
-function wrCatch()
-{
-  
-}
 
 function keyPressed()
 {
     
-   if (rand == 0 && keyCode === UP_ARROW)
+   if (rand === 0 && keyCode === UP_ARROW)
    {
-     image(wrSuccess, 250, 100, 100, 100);
-     //and text that you succeeded 
+     touchdown = true;
+     image(wrSuccess, 780, 50, 100, 100);
+     textSize(96);
+     textFont("Georgia");
+     text("TOUCHDOWN", 200, 300);
    }
    
-   if (rand == 1 && keyCode === DOWN_ARROW)
+   if (rand == 1 && keyCode === RIGHT_ARROW)
    {
-     image(wrSuccess, 150, 300, 100, 100);
-     //and text that you succeeded 
+     touchdown = true;
+     image(wrSuccess, 780, 250, 100, 100);
+     textSize(96);
+     textFont("Georgia");
+     text("TOUCHDOWN", 200, 300);
    }
    
-   if (rand == 2 && keyCode === RIGHT_ARROW)
+   if (rand == 2 && keyCode === DOWN_ARROW)
    {
-     image(wrSuccess, 250, 250, 100, 100);
-     //and text that you succeeded 
-   }
-   
-   else
-   {
-     image(qbSad, 150, 250, 100, 100)
-     //and text that you failed 
+     touchdown =  true;
+     image(wrSuccess, 780, 450, 100, 100);
+     textSize(96);
+     textFont("Georgia");
+     text("TOUCHDOWN", 200, 300);
    }
 }
+
+function touchdownFail()
+{
+  if (touchdown === false && millisecond >= 10)
+  {
+    image(qbSad, 150, 250, 100, 100);
+    textSize(96);
+    textFont("Georgia");
+    text("FAIL", 400, 300);
+  }
+}
+
+function timer()
+{
+  millisecond = int(millis()/1000);
+  textSize(20);
+  textFont("Georgia");
+  text(millisecond, 200, 100);
+}
+
