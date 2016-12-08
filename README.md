@@ -1,10 +1,11 @@
 <h1>Unit 3 Final Project: Football</h1>
 
 <strong>Interaction</strong>: 
-The player will interact with the game using Makey Makey. I am doing this so it makes the game harder and more fun to play. I want to keep the controls far from each other, so the player will have to move a bit to to make the character move in the game. The player is moving like the character, but it is a smaller version. 
+The player will interact with the game using Makey Makey. I am doing this so it makes the game harder and more fun to play. I will use the makey makey to make the players actually physically throw the ball instead of just sitting in front of the of the computer. 
+
 
 <strong>Description</strong>: 
-In this game, a wide reciever is able to move forward, backward, left and right and they can jump. A football will be coming from a quarterback and the wide reciever needs to get to the ball, catch it, and run into the touchdown. While catching the ball, there will be no defenders. However, after the ball is caught, defenders will try and prevent the player to reach the end zone. If you do not score, that automatically means that the other team scores. You can win the game if you score 42 points before the other team does. 
+In this game, a wide reciever will be in one of 3 positions. If the wide reciever is in the top position, and the ball is thrown into a hoop that is connected to the that position, then you score a touchdown. If not, you fail. You have 10 seconds to throw the ball into that specific hoop. 
 
 <h2>Timeline</h2>
 
@@ -29,9 +30,9 @@ In this game, a wide reciever is able to move forward, backward, left and right 
   <h3>Milestone #3: December 6th, 2016</h3>
   <strong>Goal:</strong> You should have iterated and improved on your prototype by the end of this milestone.
   <ul>
-    <li>Have defenders trying to tackle the wide reciever</li>
-    <li>Incorporate the scoreboard, winning and losing</li>
-    <li>Finish the Makey Makey part</li>
+    <li>Finish prototype of makey makey</li>
+    <li>Add a timer</li>
+    
   </ul>
 </div>
 
